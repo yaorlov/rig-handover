@@ -17,6 +17,8 @@ describe('readNight', () => {
     const n = night('2026-10-28');
     expect(n.rows).toHaveLength(5);
     expect(n.badLines).toBe(1);
+    // 16 lines, one bad: the 15 readable ones are 10 ok, 4 retry, 1 fail.
+    expect(n.counts).toEqual({ ok: 10, retry: 4, fail: 1 });
     expect(n.rows.map((r) => r.job)).toEqual([
       'digest/render',
       'fixtures/refresh',
