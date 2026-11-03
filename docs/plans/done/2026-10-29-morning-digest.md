@@ -1,8 +1,9 @@
 ---
 plan: morning-digest
-status: ready
+status: done
 owner: rook
 opened: 2026-10-29
+closed: 2026-11-03
 ---
 
 # Morning digest
@@ -77,3 +78,19 @@ page again with `LANE_MARKER` unset (the banner reads "no marker set") and uploa
 link. Move this plan to `docs/plans/done/` with its issue list.
 
 Done when: the preview link no longer shows the lane marker.
+
+## Issues
+
+| # | Issue | Blocked by | Worker | Closed |
+|---|-------|-----------|--------|--------|
+| 1 | Digest contract | — | opencode · deepseek-v4.1-flash-free · default | 2026-11-03 |
+| 2 | Run log reader | #1 | opencode · deepseek-v4.1-flash-free · default | 2026-11-03 |
+| 3 | Digest page | #1 | opencode · deepseek-v4.1-flash-free · default | 2026-11-03 |
+| 4 | Digest JSON | #1 | opencode · deepseek-v4.1-flash-free · default | 2026-11-03 |
+| 5 | Board link | #1 | opencode · deepseek-v4.1-flash-free · default | 2026-11-03 |
+| 6 | Route tests | #3, #4 | opencode · deepseek-v4.1-flash-free · default | 2026-11-03 |
+| 7 | Preview for review | #3 | opencode · deepseek-v4.1-flash-free · default | 2026-11-03 |
+| 8 | Clean up marker | #7 | opencode · deepseek-v4.1-flash-free · default | 2026-11-03 |
+
+Preview: https://rig-preview-wbn.pages.dev/ (Cloudflare Pages, `rig-preview` project). The first
+deployment, which still carried the lane marker, was deleted.
